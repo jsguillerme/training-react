@@ -1,0 +1,11 @@
+.principal {
+  display: grid;
+  grid-template-columns: 100px 330px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .principal {
+    display: block;
+  }
+}

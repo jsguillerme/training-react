@@ -1,0 +1,40 @@
+.botao {
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  animation: gradient 6s ease-in-out infinite alternate;
+  background: #E8E2E2;
+  background-size: 300% 300%;
+  border-radius: 0.5rem;
+  border: none;
+  color: #5D3891;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 30px;
+
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.2s;
+    box-shadow: 2px 0 5px #5D3891 inset;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0, 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@media screen and (min-width: 1510px) {
+  .botao {
+    font-size: 1.2rem;
+  }
+}

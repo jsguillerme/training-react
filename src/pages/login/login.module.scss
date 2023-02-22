@@ -1,0 +1,58 @@
+.viewLogin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media screen and ( min-width: 1510px)  {
+  .viewLogin { 
+    img {
+      width: 1200px;
+      height: 400px;
+    }
+  }
+}
+
+@media screen and ( max-width: 1509px)  {
+  .viewLogin {    
+    img {
+      width: 500px;
+      height: 400px;
+    }
+  }
+}
+
+@media screen and ( max-width: 1256px)  {
+  .viewLogin { 
+    img {
+      height: 400px;
+      width: 400px;
+    }
+  }
+}
+
+@media screen and ( max-width: 800px)  {
+  .viewLogin { 
+    justify-content: space-around;
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+@media screen and ( max-width: 590px)  {
+  .viewLogin { 
+    justify-content: space-around;
+    img {
+      display: none;
+    }
+  }
+}

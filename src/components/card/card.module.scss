@@ -1,0 +1,65 @@
+.employee {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__cabecalho {
+    border-radius: 10px 10px 0px 0px;
+    width: 260px;
+    height: 60px;
+    background-color: #F99417;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  &__rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 260px;
+    background: #E8E2E2;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+      position: relative;
+      top: -30px;
+    }
+
+    &__infos {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      h4, h5 {
+        font-family: 'GandhiSansBold';
+        font-size: 1.2rem;
+        color: #5D3891;
+        line-height: 20px;
+      }
+
+      p {
+        font-family: 'GandhiSansRegular';
+        color: #5D3891;
+        line-height: 20px;
+      }
+    }
+
+    &__actions {
+      width: 240px;
+      padding: 0.4rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}

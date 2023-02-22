@@ -1,0 +1,126 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__actions {
+    width: 90%;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+    p {
+      color: #E8E2E2;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 30px;
+      font-family: 'GandhiSansRegular';
+    }
+  }
+
+}
+
+@media screen and (min-width: 1510px) {
+  .formulario {
+    width: 50%;
+
+    &__inputs {
+      width: 1135px;
+    }
+
+    &__actions {
+      width: 1135px;
+      justify-content: space-evenly;
+      gap: 2rem;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 1509px) {
+  .formulario {
+    width: 60%;
+
+    &__inputs {
+      width: 900px;
+    }
+
+    &__actions {
+      width: 900px;
+      justify-content: space-evenly;
+      gap: 0rem;
+    }
+
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .formulario {
+    width: 50%;
+
+    &__inputs {
+      width: 600px;
+    }
+
+    &__actions {
+      justify-content: center;
+      gap: 4rem;
+      width: 600px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .formulario {
+    width: 40%;
+
+    &__inputs {
+      width: 500px;
+    }
+
+    &__actions {
+      justify-content: center;
+      flex-wrap: wrap-reverse;
+      gap: 2rem;
+      width: 300px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .formulario {
+    width: 100%;
+
+    &__inputs {
+      width: 90%;
+    }
+
+    &__actions {
+      justify-content: center;
+      flex-wrap: wrap-reverse;
+      gap: 2rem;
+      width: 300px;
+    }
+
+  }
+}
